@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayan Ahmad | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid #00ffff;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #a0d8ef;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1rem 0;
+    }
+
+    nav a {
+      color: #00ffff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      border-left: 5px solid #00ffff;
+      padding-left: 1rem;
+      animation: slideInLeft 1s ease-out;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      color: #fff;
+    }
+
+    th, td {
+      padding: 0.8rem;
+      border-bottom: 1px solid #00ffff;
+      text-align: left;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #111;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInLeft {
+      from { transform: translateX(-50px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="ayan_profile.jpg" alt="Ayan Ahmad Profile Photo" />
+    <h1>Ayan Ahmad</h1>
+    <p>Mechanical Engineer | MBA (Marketing & Operations Research)</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="Ayan_Resume.pdf" download>Resume</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I am a motivated MBA student specializing in Marketing and Operations with a background in Mechanical Engineering. Skilled in market research, data analytics, and strategic planning. Proficient in tools such as Excel, SQL, and Power BI. Seeking a summer internship to apply analytical and creative skills to real-world challenges.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <table>
+        <tr><th>Degree</th><th>Institution</th><th>Year</th></tr>
+        <tr><td>MBA (Marketing & Operations Research)</td><td>Aligarh Muslim University</td><td>Aug 2024 – Present</td></tr>
+        <tr><td>B.Tech in Mechanical Engineering</td><td>Noida Institute of Engineering & Technology</td><td>2018 – 2022</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <ul>
+        <li>Marketing & Analysis: Market Research, Customer Segmentation, Consumer Behaviour, Market Audit</li>
+        <li>Technical Proficiency: Microsoft Excel Advanced, Microsoft PowerPoint, SQL Advanced, Power BI, Data Analytics Advanced, Business Analytics</li>
+        <li>Programming and Computer Proficiency: Proficiency in programming languages such as Java, C, C++ and HTML, Tools such as IntelliJ, GitHub, NetBeans and VS Code,
+Knowledge of Data Structures and Algorithms and have ability to develop algorithms and write code for Automation and Robotics applications.</li>
+        <li>Other Skills: Problem Solving, Analytical and Critical Thinking, Communication and Collaboration, Leadership, Adaptability.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Healthcare Data Visualization</h3>
+      <p>Dashboards built using Power BI and Excel for medical trend analysis.</p>
+    </div>
+    <div class="card">
+      <h3>Inventory Management System</h3>
+      <p>SQLAlchemy-powered backend for real-time inventory control.</p>
+    </div>
+    <div class="card">
+      <h3>Retail Database System</h3>
+      <p>Normalized relational DBMS design for a retail chain.</p>
+    </div>
+    <div class="card">
+      <h3>Secure Transactional Database System for a Financial Institution</h3>
+      <p>Created secure data storage for financial operations using advanced SQL queries.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:ayanahmad135@gmail.com">ayanahmad135@gmail.com</a></p>
+      <p>Phone: +91-9717449873</p>
+      <p>Location: New Delhi, India</p>
+      <p><a href="https://www.linkedin.com/in/ayan-ahmad-aa4712236/">LinkedIn</a> | 
+         <a href="https://github.com/ayanahmad01">GitHub</a> | 
+         <a href="https://leetcode.com/ayanahmad_01/">LeetCode</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ayan Ahmad. All rights reserved.</p>
+  </footer>
+</body>
+</html>
